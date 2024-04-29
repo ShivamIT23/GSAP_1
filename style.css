@@ -32,17 +32,21 @@ body {
 }
 
 #nav h3 {
-  font-size: 25px;
+  font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #main h1 {
-  font-size: 8rem;
+  font-size: 15vw;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 7rem;
+  line-height: 12vmax;
   width: 80%;
+  position: relative;
+  z-index: 90;
   margin-left: 10%;
 }
 
@@ -57,4 +61,31 @@ body {
 #main h1:nth-child(4) {
     text-align: center;
     padding-left: 7%;
+}
+
+img{
+  height: 70vmin;
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  overflow: hidden;
+}
+
+#img1{
+  rotate: 20deg;
+}
+
+#img2{
+  rotate:10deg;
+}
+
+#img3{
+  rotate: 0deg;
+}
+
+
+@media screen and (max-width:650px) {
+  #nav h3  {
+    display : none;
+  }
 }
